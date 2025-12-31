@@ -1,0 +1,23 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "fir-learning-561c9",
+                    "appId": "1:607914583158:android:736ecdd2b014e7d476eb57",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "fir-learning-561c9",
+                    "configurations": {
+                        "android": "1:607914583158:android:736ecdd2b014e7d476eb57",
+                        "ios": "1:607914583158:ios:43f07d142abea60076eb57",
+                        "web": "1:607914583158:web:9e9254caee0205f476eb57"
+                    }
+                }
+            }
+        }
+    }
+}
