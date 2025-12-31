@@ -1,3 +1,4 @@
+import 'package:firebase_learning/colors.dart';
 import 'package:firebase_learning/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: bgColor,
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: primaryColor)
+        scaffoldBackgroundColor: AppColors.bgColor,
+        textTheme: Theme.of(
+          context,
+        ).textTheme.apply(bodyColor: AppColors.primaryColor, fontFamily: 'Outfit'),
       ),
       home: HomePage(),
     );

@@ -1,11 +1,9 @@
+import 'package:firebase_learning/colors.dart';
 import 'package:firebase_learning/login_screen.dart';
 import 'package:firebase_learning/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
-//Colors
-const Color bgColor = Color(0xFFD2FFF4);
-const Color primaryColor = Color(0xFF2D5D70);
-const Color secondaryColor = Color(0xFF265DAB);
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                 height: 40,
                 width: 150,
                 decoration: BoxDecoration(
-                  color: primaryColor,
+                  color: AppColors.primaryColor,
                   borderRadius: .circular(20),
                 ),
                 child: Center(
@@ -64,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                   child: Text(
                     'Sign In',
                     style: TextStyle(
-                      color: primaryColor,
+                      color: AppColors.primaryColor,
                       fontSize: 18,
                       fontWeight: .bold,
                     ),
