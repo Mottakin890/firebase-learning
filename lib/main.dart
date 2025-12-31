@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.bgColor,
         textTheme: Theme.of(
           context,
-        ).textTheme.apply(bodyColor: AppColors.primaryColor, fontFamily: 'Outfit'),
+        ).textTheme.apply(bodyColor: Colors.black, fontFamily: 'Outfit',),
       ),
       home: HomePage(),
     );

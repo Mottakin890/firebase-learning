@@ -1,3 +1,4 @@
+import 'package:firebase_learning/colors.dart';
 import 'package:firebase_learning/form_validator.dart';
 import 'package:flutter/material.dart';
 
@@ -57,6 +58,35 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(50),
                       borderSide: BorderSide(color: Colors.grey, width: 0.4),
                       gapPadding: 7,
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 18),
+                child: GestureDetector(
+                  onTap: () {
+                    debugPrint('Pressed');
+                  },
+                  child: Container(
+                    height: 40,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: AppColors.primaryColor,
+                      borderRadius: .circular(50),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Login',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: .bold,
+                          fontSize: 20
+                        ),
+                      ),
                     ),
                   ),
                 ),
