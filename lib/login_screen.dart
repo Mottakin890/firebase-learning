@@ -69,7 +69,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding: EdgeInsets.symmetric(horizontal: 18),
                 child: GestureDetector(
                   onTap: () {
-                    debugPrint('Pressed');
+                    if (_formKey.currentState!.validate()) {
+                      debugPrint('Pressed');
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Processing Data')),
+                      );
+                    }
                   },
                   child: Container(
                     height: 40,
@@ -84,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: .bold,
-                          fontSize: 20
+                          fontSize: 20,
                         ),
                       ),
                     ),

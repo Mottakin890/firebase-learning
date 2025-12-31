@@ -70,7 +70,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 padding: EdgeInsets.symmetric(horizontal: 18),
                 child: GestureDetector(
                   onTap: () {
-                    debugPrint('Pressed');
+                    if (_formKey.currentState!.validate()) {
+                      debugPrint('Pressed');
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Processing Data')),
+                      );
+                    }
                   },
                   child: Container(
                     height: 40,
